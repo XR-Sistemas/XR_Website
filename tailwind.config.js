@@ -8,9 +8,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('/fundo_home.png')",
+        home: "url('/images/fundo_home.png')",
+        about: "url('/images/fundo_about.png')",
+        services: "url('/images/fundo_services.png')",
+        projects: "url('/images/fundo_projects.png')",
+      },
+      colors: {
+        primary: "#F30202",
+        secondary: "#F40303",
+      },
+      fontFamily: {
+        microTecni: ["var(--font-microTecni)"],
+        helvetica: ["var(--font-helvetica)"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

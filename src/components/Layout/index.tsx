@@ -1,10 +1,16 @@
+import { SplashScreen } from "../SplashScreen";
 import { Header } from "../Header";
+import { Footer } from "../Footer";
+import { FloatingMenu } from "../FloatingMenu";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen">
+    <>
+      <SplashScreen />
       <Header />
+      <FloatingMenu />
       {children}
-    </div>
+      <Footer />
+    </>
   );
 }

@@ -1,22 +1,23 @@
 import Link from "next/link";
 
 export function HeaderItems() {
+  const classes = "hover:text-primary transition-all duration-300 ease-in-out";
   return (
-    <div className="text-white text-sm flex items-center gap-20">
-      <Link href={"/"}>
-        <h1>Home</h1>
+    <div className="text-white font-microTecni font-bold text-base flex items-center gap-10 ">
+      <Link href={"/"} className={classes}>
+        Home
       </Link>
-      <Link href={"/#about"}>
-        <h1>About</h1>
+      <Link href={"/#about"} className={classes}>
+        About
       </Link>
-      <Link href={"/services"}>
-        <h1>Services</h1>
+      <Link href={"/services"} className={classes}>
+        Services
       </Link>
-      <Link href={"/#projects"}>
-        <h1>Projects</h1>
+      <Link href={"/#projects"} className={classes}>
+        Projects
       </Link>
-      <Link href={"/contact"}>
-        <h1>Contact Us</h1>
+      <Link href={"/contact"} className={classes}>
+        Contact Us
       </Link>
     </div>
   );
