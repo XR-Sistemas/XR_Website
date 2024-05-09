@@ -18,7 +18,7 @@ export const BannerCarousel = () => {
         {isMobile ? (
           <CarouselMobile data={projects} />
         ) : (
-          <CarouselDesktop data={projects} />
+          <CarouselDesktop />
         )}
       </div>
     </div>

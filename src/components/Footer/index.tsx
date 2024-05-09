@@ -7,7 +7,10 @@ export function Footer() {
     "hover:text-primary w-max transition-all duration-300 ease-in-out";
 
   return (
-    <footer id="footer" className="flex flex-col w-full bg-home bg-cover bg-no-repeat px-[15%] py-20 text-white">
+    <footer
+      id="footer"
+      className="flex flex-col w-full bg-black border-t border-white border-opacity-50 px-[15%] py-20 text-white"
+    >
       <div className="flex items-center justify-between gap-[10%] w-full pb-20">
         <p className="text-lg tracking-wider w-full">
           Development beyond limits, turning your ideas into powerful
@@ -57,7 +60,7 @@ export function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center w-full gap-3">
-        Copyright © 2023 - All right reserved by
+        Copyright © 2021 - All right reserved by
         <Image
           src={"/logos/logo_horizontal.png"}
           alt="logo"

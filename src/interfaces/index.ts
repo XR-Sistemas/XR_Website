@@ -1,4 +1,5 @@
 export interface IProject {
+  id: number,
   title: string;
   imageUrl: string;
   website: string;

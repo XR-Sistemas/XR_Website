@@ -1,14 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useCarousel } from "@/hooks/useCarousel";
 import { IProject } from "@/interfaces";
 
 export const CarouselMobile = ({ data }: { data: IProject[] }) => {
-  const { getFirstSentence, isExpanded, setIsExpanded } = useCarousel(data);
-
   return (
     <>
       <Swiper
